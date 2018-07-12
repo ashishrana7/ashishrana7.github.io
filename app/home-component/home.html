@@ -1,0 +1,67 @@
+
+
+<div class="dropdown">
+  <span class="dropbtn">{{username}}</span>
+  <div class="dropdown-content">
+    <label>{{fusername}}</label>
+    <a href="" data-ng-click = "gotoDashboard()">Dashboard</a>
+    <a href = "" data-ng-click = "gotoProfile()">Team Profile</a>
+    <a href=""  data-ng-click="logout()">Logout</a>
+  </div>
+</div>
+
+        <!-- <select>
+        <option  value = "user1">{{username}}</option>
+        <option><button data-ng-click="gotoHome()">{{fusername}}</button></option>
+        <option><button data-ng-click="gotoHome()">Home</button></option>
+        <option><button data-ng-click="gotoDashboard()">Dashboard</button></option>
+        <option><button data-ng-click="gotoProfile()">Profile</button></option>
+        <option><button data-ng-click = "logout()">Logout</button></option>
+          </select>  
+        -->
+
+ <div>   <ui-view> </ui-view>  </div>
+<body  data-ng-app="genesisApp" data-ng-controller="homeCtrl">
+
+
+    <!-- <br><br><br><br>
+      <div> <label>To Do Name</label>
+    <input type="text" id="fn" data-ng-model="mytodoObj.name">
+    </div>
+    <div><label>To Do Description</label></div>  </br>
+    <textarea id="ln" data-ng-model="mytodoObj.description">  </textarea>
+    </div>
+    <div>
+    <button ng-click="addData()">add</button>
+    </div>
+    
+    
+  
+
+    <div >
+        <p  ng-repeat="todo in list" >
+            <input type = "checkbox" ng-model=" todo.checked">
+            <label ng-class = "{'strikeoff': todo.checked}" ng-mouseover="open = true" ng-mouseleave="open = false">{{todo.name}}</label> 
+            &emsp;
+            <button  ng-click="delete($index)">delete</button></input>&emsp;&emsp;&emsp;
+            <label ng-show = "open" ng-click="($index)" ><span >{{todo.description}} </span> </label>
+        </p>
+    </div> 
+ -->
+
+    <!-- <button onclick="myFunction()">Try it</button>
+ <p id="username1">  </p>
+    <script>
+            function myFunction(){
+                var name = "Hello";
+                var res = name.charAt(0);
+                document.getElementById("username1").innerHTML = res;
+            }
+            </script> -->
+
+
+
+
+<!-- <aside></aside> -->
+
+</body>

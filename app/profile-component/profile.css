@@ -1,0 +1,38 @@
+
+.form-style-9{
+    max-width: 1000px;
+    max-height: 1500px;
+    
+     background: rgb(255, 255, 255);
+    padding: 30px;
+    top:100px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid rgb(99, 191, 245);
+}
+.form-style-9 ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+.form-style-9 ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+ 
+body{
+    background-image: url("wallpaper-1948122.jpg"); 
+    background-position: center;
+}
+
+.li1{
+
+}
+
+.li2
+{ 
+
+}

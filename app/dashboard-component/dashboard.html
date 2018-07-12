@@ -1,0 +1,47 @@
+
+<h1 style="color:midnightblue; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif" align = "center">Welcome to Dashboard</h1>
+
+&emsp;
+
+
+<body data-ng-app="dashboard" data-ng-controller="dashboardCtrl">
+
+    
+<!-- <div> <label>To Do Name</label>
+    <input type="text" name = "todoname" style="font-family:'Times New Roman', Times, serif; font-size: 20px; size:30px" data-ng-model="mytodoObj.name">
+    </div>
+    <br><br><br>
+    <div><label>To Do Description</label></div>
+    <textarea name = "tododesc" style = "font-family:'Times New Roman', Times, serif; font-size: 20px" data-ng-model="mytodoObj.description">  </textarea>
+    </div>
+    <br><br><br>
+    <div>
+    <button  ng-click="addData()">ADD ITEM</button>
+    </div> -->
+
+    <div class="form-style-6">
+        <h1>Add Details</h1>
+        <form>
+        <input type="text" name="field1" data-ng-model="mytodoObj.name" placeholder="To Do Name"/>
+        <textarea name="field3" placeholder="To Do Description" data-ng-model="mytodoObj.description"></textarea>
+        <input type="submit" value="ADD TO LIST" ng-click="addData()" />
+        </form>
+        </div>
+
+
+        <br><br><br><br>
+<div >
+    <li align="center" style="font-size:20px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: floralwhite" ng-repeat="todo in list" >
+        <input type = "checkbox" ng-model=" todo.checked">
+        <label ng-class = "{'strikeoff': todo.checked}" style="color: gold" ng-mouseover="open = true" ng-mouseleave="open = false">
+            {{todo.name}}
+        </label> 
+        &emsp;
+        
+        <label>Description</label>
+        <label ng-show = "open" ng-click="($index)" style="color: floralwhite"><span >{{todo.description}} </span> </label>
+        <button  ng-click="delete($index)" style="color:darkgreen">delete</button></input>&emsp;&emsp;&emsp;
+    </li>
+</div>
+
+</body>
